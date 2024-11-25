@@ -1,0 +1,212 @@
+player_id,player,passes,position,position_specific,team,team_abbr,active
+160158,Rodri,3633,M,Centre Central Midfielder,Manchester City,MCI,TRUE
+302712,Bruno Guimarães,2264,M,Centre Defensive Midfielder,Newcastle United,NEW,TRUE
+342058,Declan Rice,2227,M,Centre Central Midfielder,Arsenal,ARS,TRUE
+345054,Moisés Caicedo,2097,M,Centre Defensive Midfielder,Chelsea,CHE,TRUE
+340453,Alexis Mac Allister,1927,M,Left/Centre/Right Attacking Midfielder,Liverpool,LIV,TRUE
+180060,Bruno Fernandes,1911,M,Left/Centre/Right Attacking Midfielder,Manchester United,MUN,TRUE
+288147,Martin Ødegaard,1900,M,Left/Centre/Right Attacking Midfielder,Arsenal,ARS,TRUE
+312817,Yves Bissouma,1834,M,Centre Central Midfielder,Tottenham Hotspur,TOT,TRUE
+44030,Bernardo Silva,1824,M,Left/Centre Attacking Midfielder,Manchester City,MCI,TRUE
+337917,Enzo Fernández,1795,M,Midfielder,Chelsea,CHE,TRUE
+260162,Phil Foden,1670,M,Centre Central Midfielder,Manchester City,MCI,TRUE
+340665,Mateo Kovacic,1523,M,Central Midfielder,Manchester City,MCI,TRUE
+160057,Christian Nørgaard,1441,M,Centre Central Midfielder,Brentford,BRE,TRUE
+336342,Mario Lemina,1439,M,Centre Central Midfielder,Wolverhampton Wanderers,WOL,TRUE
+325037,Lucas Paquetá,1411,M,Centre Attacking Midfielder,West Ham United,WHU,TRUE
+323846,Casemiro,1406,M,Centre Central Midfielder,Manchester United,MUN,TRUE
+364659,Ross Barkley,1405,M,Midfielder,Luton Town,LUT,TRUE
+340932,Dominik Szoboszlai,1399,M,Left/Centre/Right Attacking Midfielder,Liverpool,LIV,TRUE
+340680,James Maddison,1346,M,Left/Centre/Right Attacking Midfielder,Tottenham Hotspur,TOT,TRUE
+294324,Lewis Cook,1343,M,Midfielder,Bournemouth,BOU,TRUE
+317848,Josh Cullen,1341,M,Centre Central Midfielder,Burnley,BUR,FALSE
+314125,Pape Sarr,1313,M,Centre Central Midfielder,Tottenham Hotspur,TOT,TRUE
+346777,Cole Palmer,1307,M,Attacking Midfielder,Chelsea,CHE,TRUE
+258703,Vitaly Janelt,1306,M,Centre Defensive Midfielder,Brentford,BRE,TRUE
+345140,Wataru Endo,1305,M,Centre Defensive Midfielder,Liverpool,LIV,TRUE
+323587,Morgan Gibbs-White,1282,M,Centre Central Midfielder,Nottingham Forest,NFO,TRUE
+19302,Tom Cairney,1241,M,Left/Centre/Right Attacking Midfielder,Fulham,FUL,TRUE
+337528,João Gomes,1237,M,Centre Central Midfielder,Wolverhampton Wanderers,WOL,TRUE
+340460,Jefferson Lerma,1225,M,Centre Central Midfielder,Crystal Palace,CRY,TRUE
+288967,Ryan Christie,1220,M,Left/Centre/Right Attacking Midfielder,Bournemouth,BOU,TRUE
+135591,Sean Longstaff,1209,M,Centre Central Midfielder,Newcastle United,NEW,TRUE
+344581,Edson Álvarez,1195,M,Defensive Midfielder,West Ham United,WHU,TRUE
+135200,John McGinn,1142,M,Centre Central Midfielder,Aston Villa,AVL,TRUE
+340568,Dejan Kulusevski,1132,M,Right Winger,Tottenham Hotspur,TOT,TRUE
+338756,James Garner,1111,M,Centre Central Midfielder,Everton,EVE,TRUE
+313731,Alfie Doughty,1088,M,Left Winger,Luton Town,LUT,FALSE
+316561,Andreas Pereira,1063,M,Attacking Midfielder,Fulham,FUL,TRUE
+180093,Josh Brownhill,1028,M,Centre Central Midfielder,Burnley,BUR,FALSE
+312584,Boubacar Kamara,1024,M,Centre Defensive Midfielder,Aston Villa,AVL,TRUE
+344713,Gustavo Hamer,982,M,Centre Defensive Midfielder,Sheffield United,SHU,FALSE
+344447,Vinicius Souza,979,M,Centre Central Midfielder,Sheffield United,SHU,FALSE
+160425,Mathias Jensen,972,M,Centre Central Midfielder,Brentford,BRE,TRUE
+259014,Tomás Soucek,947,M,Centre Defensive Midfielder,West Ham United,WHU,TRUE
+340669,Kai Havertz,932,M,Left/Centre/Right Attacking Midfielder,Arsenal,ARS,TRUE
+340565,Youri Tielemans,907,M,Centre Central Midfielder,Aston Villa,AVL,TRUE
+165275,Harvey Elliott,904,M,Left/Centre/Right Attacking Midfielder,Liverpool,LIV,TRUE
+263465,Idrissa Gueye,880,M,Centre Defensive Midfielder,Everton,EVE,TRUE
+222694,Abdoulaye Doucouré,866,M,Centre Central Midfielder,Everton,EVE,TRUE
+328496,Kobbie Mainoo,862,M,Centre Central Midfielder,Manchester United,MUN,TRUE
+363274,Oliver Norwood,855,M,Midfielder,Sheffield United,SHU,FALSE
+288559,Will Hughes,845,M,Centre Central Midfielder,Crystal Palace,CRY,TRUE
+347497,Nicolás Domínguez,829,M,Centre Central Midfielder,Nottingham Forest,NFO,TRUE
+336549,Pablo Sarabia,829,M,Left/Centre/Right Attacking Midfielder,Wolverhampton Wanderers,WOL,TRUE
+134233,Ryan Yates,817,M,Left/Centre/Right Attacking Midfielder,Nottingham Forest,NFO,TRUE
+166789,Gabriel Martinelli,807,M,Midfielder,Arsenal,ARS,TRUE
+19595,Kevin De Bruyne,804,M,Left/Centre/Right Attacking Midfielder,Manchester City,MCI,TRUE
+320724,Eberechi Eze,790,M,Centre Attacking Midfielder,Crystal Palace,CRY,TRUE
+302775,Rodrigo Bentancur,787,M,Centre Central Midfielder,Tottenham Hotspur,TOT,TRUE
+346421,Carlos Baleba,773,M,Centre Central Midfielder,Brighton and Hove Albion,BHA,TRUE
+337833,Jorginho,773,M,Centre Central Midfielder,Arsenal,ARS,TRUE
+346333,Mohammed Kudus,773,M,Midfielder,West Ham United,WHU,TRUE
+154335,Miguel Almirón,767,M,Left/Centre/Right Second Striker,Newcastle United,NEW,TRUE
+348034,Marcus Tavernier,760,M,Midfielder,Bournemouth,BOU,TRUE
+318378,Christian Eriksen,754,M,Centre Attacking Midfielder,Manchester United,MUN,TRUE
+138634,Curtis Jones,750,M,Centre Central Midfielder,Liverpool,LIV,TRUE
+361016,Albert Sambi Lokonga,740,M,Centre Central Midfielder,Luton Town,LUT,FALSE
+336542,Danilo,725,M,Midfielder,Nottingham Forest,NFO,TRUE
+202622,Harrison Reed,722,M,Centre Central Midfielder,Fulham,FUL,TRUE
+284910,Leon Bailey,701,M,Left Winger,Aston Villa,AVL,TRUE
+161347,Bryan Mbeumo,650,M,Left Winger,Brentford,BRE,TRUE
+258869,Thomas Partey,621,M,Centre Defensive Midfielder,Arsenal,ARS,TRUE
+283241,Harry Wilson,582,M,Left/Right Winger,Fulham,FUL,TRUE
+356624,Adam Wharton,563,M,Central Midfielder,Crystal Palace,CRY,TRUE
+285236,Jack Grealish,552,M,Left/Centre/Right Attacking Midfielder,Manchester City,MCI,TRUE
+349224,Jack Harrison,534,M,Midfielder,Everton,EVE,TRUE
+348450,Lewis Miley,524,M,Midfielder,Newcastle United,NEW,TRUE
+346778,Matheus Nunes,522,M,Central Midfielder,Manchester City,MCI,TRUE
+359341,Ben Osborn,506,M,Midfielder,Sheffield United,SHU,FALSE
+160732,Philip Billing,501,M,Centre Defensive Midfielder,Bournemouth,BOU,TRUE
+340458,James Milner,500,M,Left/Centre/Right Central Midfielder,Brighton and Hove Albion,BHA,TRUE
+342028,Tahith Chong,499,M,Left/Right Winger,Luton Town,LUT,FALSE
+346846,Ryan Gravenberch,493,M,Centre Central Midfielder,Liverpool,LIV,TRUE
+337950,Sasa Lukic,489,M,Central Midfielder,Fulham,FUL,TRUE
+347499,James McAtee,489,M,Central Midfielder,Sheffield United,SHU,TRUE
+187454,Jordan Clark,478,M,Right Winger,Luton Town,LUT,FALSE
+336483,Mykhailo Mudryk,477,M,Left Winger,Chelsea,CHE,TRUE
+340569,Boubacar Traoré,443,M,Centre Central Midfielder,Wolverhampton Wanderers,WOL,TRUE
+286396,Yoane Wissa,440,M,Left Winger,Brentford,BRE,TRUE
+335797,Jack Hinshelwood,435,M,Centre Defensive Midfielder,Brighton and Hove Albion,BHA,TRUE
+344583,Alex Scott,432,M,Central Midfielder,Bournemouth,BOU,TRUE
+357712,Oliver Arblaster,428,M,Centre Central Midfielder,Sheffield United,SHU,FALSE
+316524,Cheick Doucouré,421,M,Centre Defensive Midfielder,Crystal Palace,CRY,TRUE
+162005,Jacob Murphy,421,M,Left/Right Winger,Newcastle United,NEW,TRUE
+346852,Ibrahim Sangaré,419,M,Centre Central Midfielder,Nottingham Forest,NFO,TRUE
+342475,Marvelous Nakamba,415,M,Defensive Midfielder,Luton Town,LUT,FALSE
+322881,Mikkel Damsgaard,394,M,Left/Centre Attacking Midfielder,Brentford,BRE,TRUE
+11345,Pelly Ruddock Mpanzu,343,M,Midfielder,Luton Town,LUT,FALSE
+42727,Jeffrey Schlupp,323,M,Left Winger,Crystal Palace,CRY,TRUE
+222663,Jacob Ramsey,310,M,Midfielder,Aston Villa,AVL,TRUE
+352025,Jakub Moder,289,M,Midfielder,Brighton and Hove Albion,BHA,TRUE
+333368,Yehor Yarmoliuk,282,M,Centre Attacking Midfielder,Brentford,BRE,TRUE
+346853,Jean-Ricner Bellegarde,281,M,Centre Central Midfielder,Wolverhampton Wanderers,WOL,TRUE
+340940,Sandro Tonali,267,M,Centre Defensive Midfielder,Newcastle United,NEW,TRUE
+342771,Harvey Barnes,254,M,Left/Right Winger,Newcastle United,NEW,TRUE
+275673,Andre Brooks,248,M,Left Winger,Sheffield United,SHU,FALSE
+32140,Solly March,221,M,Left/Centre/Right Attacking Midfielder,Brighton and Hove Albion,BHA,TRUE
+341034,Mason Mount,203,M,Centre Attacking Midfielder,Manchester United,MUN,TRUE
+300080,Oscar Bobb,168,M,Left/Centre/Right Winger,Manchester City,MCI,TRUE
+312805,Julio Enciso,167,M,Left/Centre Attacking Midfielder,Brighton and Hove Albion,BHA,TRUE
+287383,Joe Willock,153,M,Centre Attacking Midfielder,Newcastle United,NEW,TRUE
+345764,Aaron Ramsey,146,M,Centre Attacking Midfielder,Burnley,BUR,FALSE
+321940,Carney Chukwuemeka,133,M,Centre Central Midfielder,Chelsea,CHE,TRUE
+356534,David Brooks,112,M,Left/Centre/Right Attacking Midfielder,Bournemouth,BOU,TRUE
+345098,Tom Davies,92,M,Midfielder,Sheffield United,SHU,FALSE
+359245,Luke Berry,88,M,Centre Central Midfielder,Luton Town,LUT,FALSE
+340456,Kevin Schade,88,M,Left/Right Winger,Brentford,BRE,TRUE
+343351,Fred Onyedinma,85,M,Left/Centre/Right Attacking Midfielder,Luton Town,LUT,FALSE
+345193,Tyler Adams,69,M,Midfielder,Bournemouth,BOU,TRUE
+342564,Nathan Redmond,68,M,Left/Right Winger,Burnley,BUR,FALSE
+49709,Jack Cork,32,M,Centre Central Midfielder,Burnley,BUR,FALSE
+345120,Roméo Lavia,27,M,Centre Defensive Midfielder,Chelsea,CHE,TRUE
+349097,Ethan Nwaneri,18,M,Midfielder,Arsenal,ARS,TRUE
+135989,Josh Dasilva,13,M,Left/Right Winger,Brentford,BRE,TRUE
+353592,Zack Nelson,4,M,Midfielder,Luton Town,LUT,FALSE
+351069,Ryan Oné,1,M,Midfielder,Sheffield United,SHU,FALSE
+354355,Sydie Peck,1,M,Central Midfielder,Sheffield United,SHU,FALSE
+160158,Rodri,2977,M,Centre Central Midfielder,Manchester City,MCI,TRUE
+258869,Thomas Partey,1946,M,Centre Defensive Midfielder,Arsenal,ARS,TRUE
+180060,Bruno Fernandes,1855,M,Left/Centre/Right Attacking Midfielder,Manchester United,MUN,TRUE
+288147,Martin Ødegaard,1689,M,Left/Centre/Right Attacking Midfielder,Arsenal,ARS,TRUE
+302712,Bruno Guimarães,1632,M,Centre Defensive Midfielder,Newcastle United,NEW,TRUE
+337833,Jorginho,1610,M,Centre Central Midfielder,Arsenal,ARS,TRUE
+337917,Enzo Fernández,1421,M,Midfielder,Chelsea,CHE,TRUE
+44030,Bernardo Silva,1418,M,Left/Centre Attacking Midfielder,Manchester City,MCI,TRUE
+323846,Casemiro,1412,M,Centre Central Midfielder,Manchester United,MUN,TRUE
+318378,Christian Eriksen,1391,M,Centre Attacking Midfielder,Manchester United,MUN,TRUE
+19595,Kevin De Bruyne,1357,M,Left/Centre/Right Attacking Midfielder,Manchester City,MCI,TRUE
+316524,Cheick Doucouré,1239,M,Centre Defensive Midfielder,Crystal Palace,CRY,TRUE
+160425,Mathias Jensen,1217,M,Centre Central Midfielder,Brentford,BRE,TRUE
+202622,Harrison Reed,1217,M,Centre Central Midfielder,Fulham,FUL,TRUE
+263465,Idrissa Gueye,1209,M,Centre Defensive Midfielder,Everton,EVE,TRUE
+135591,Sean Longstaff,1125,M,Centre Central Midfielder,Newcastle United,NEW,TRUE
+325037,Lucas Paquetá,1125,M,Centre Attacking Midfielder,West Ham United,WHU,TRUE
+32140,Solly March,1101,M,Left/Centre/Right Attacking Midfielder,Brighton and Hove Albion,BHA,TRUE
+320724,Eberechi Eze,1083,M,Centre Attacking Midfielder,Crystal Palace,CRY,TRUE
+160732,Philip Billing,1008,M,Centre Defensive Midfielder,Bournemouth,BOU,TRUE
+260162,Phil Foden,1003,M,Centre Central Midfielder,Manchester City,MCI,TRUE
+364660,Emiliano Buendía,992,M,Midfielder,Aston Villa,AVL,TRUE
+285236,Jack Grealish,989,M,Left/Centre/Right Attacking Midfielder,Manchester City,MCI,TRUE
+323587,Morgan Gibbs-White,980,M,Centre Central Midfielder,Nottingham Forest,NFO,TRUE
+258703,Vitaly Janelt,977,M,Centre Defensive Midfielder,Brentford,BRE,TRUE
+166789,Gabriel Martinelli,977,M,Midfielder,Arsenal,ARS,TRUE
+259014,Tomás Soucek,974,M,Centre Defensive Midfielder,West Ham United,WHU,TRUE
+135200,John McGinn,970,M,Centre Central Midfielder,Aston Villa,AVL,TRUE
+165275,Harvey Elliott,957,M,Left/Centre/Right Attacking Midfielder,Liverpool,LIV,TRUE
+312584,Boubacar Kamara,940,M,Centre Defensive Midfielder,Aston Villa,AVL,TRUE
+349224,Jack Harrison,933,M,Midfielder,Leeds United,LEE,TRUE
+154335,Miguel Almirón,932,M,Left/Centre/Right Second Striker,Newcastle United,NEW,TRUE
+346824,Boubakary Soumaré,900,M,Centre Central Midfielder,Leicester City,LEI,TRUE
+42220,Wilfred Ndidi,894,M,Centre Central Midfielder,Leicester City,LEI,TRUE
+287383,Joe Willock,888,M,Centre Attacking Midfielder,Newcastle United,NEW,TRUE
+222663,Jacob Ramsey,864,M,Midfielder,Aston Villa,AVL,TRUE
+302775,Rodrigo Bentancur,857,M,Centre Central Midfielder,Tottenham Hotspur,TOT,TRUE
+316561,Andreas Pereira,855,M,Attacking Midfielder,Fulham,FUL,TRUE
+42727,Jeffrey Schlupp,854,M,Left Winger,Crystal Palace,CRY,TRUE
+362977,Remo Freuler,828,M,Centre Attacking Midfielder,Nottingham Forest,NFO,TRUE
+161347,Bryan Mbeumo,809,M,Left Winger,Brentford,BRE,TRUE
+160057,Christian Nørgaard,793,M,Centre Central Midfielder,Brentford,BRE,TRUE
+342771,Harvey Barnes,727,M,Left/Right Winger,Leicester City,LEI,TRUE
+312817,Yves Bissouma,727,M,Centre Central Midfielder,Tottenham Hotspur,TOT,TRUE
+342721,Brenden Aaronson,719,M,Centre Attacking Midfielder,Leeds United,LEE,FALSE
+19302,Tom Cairney,707,M,Left/Centre/Right Attacking Midfielder,Fulham,FUL,TRUE
+294324,Lewis Cook,703,M,Midfielder,Bournemouth,BOU,TRUE
+138634,Curtis Jones,658,M,Centre Central Midfielder,Liverpool,LIV,TRUE
+336342,Mario Lemina,647,M,Centre Central Midfielder,Wolverhampton Wanderers,WOL,TRUE
+344429,Ainsley Maitland-Niles,624,M,Centre/Right Wing Back,Southampton,SOU,FALSE
+288967,Ryan Christie,614,M,Left/Centre/Right Attacking Midfielder,Bournemouth,BOU,TRUE
+348034,Marcus Tavernier,596,M,Midfielder,Bournemouth,BOU,TRUE
+337759,Weston McKennie,590,M,Centre Central Midfielder,Leeds United,LEE,FALSE
+346437,Mohamed Elyounoussi,581,M,Midfielder,Southampton,SOU,FALSE
+134233,Ryan Yates,577,M,Left/Centre/Right Attacking Midfielder,Nottingham Forest,NFO,TRUE
+135989,Josh Dasilva,572,M,Left/Right Winger,Brentford,BRE,TRUE
+222694,Abdoulaye Doucouré,538,M,Centre Central Midfielder,Everton,EVE,TRUE
+284910,Leon Bailey,441,M,Left Winger,Aston Villa,AVL,TRUE
+258686,Ibrahima Diallo,398,M,Central Midfielder,Southampton,SOU,FALSE
+162005,Jacob Murphy,383,M,Left/Right Winger,Newcastle United,NEW,TRUE
+283241,Harry Wilson,376,M,Left/Right Winger,Fulham,FUL,TRUE
+316201,Joe Aribo,375,M,Central Midfielder,Southampton,SOU,TRUE
+322881,Mikkel Damsgaard,371,M,Left/Centre Attacking Midfielder,Brentford,BRE,TRUE
+288559,Will Hughes,357,M,Centre Central Midfielder,Crystal Palace,CRY,TRUE
+286396,Yoane Wissa,327,M,Left Winger,Brentford,BRE,TRUE
+336549,Pablo Sarabia,314,M,Left/Centre/Right Attacking Midfielder,Wolverhampton Wanderers,WOL,TRUE
+357917,Jonjo Shelvey,314,M,Central Midfielder,Newcastle United,NEW,FALSE
+337528,João Gomes,312,M,Centre Central Midfielder,Wolverhampton Wanderers,WOL,TRUE
+338756,James Garner,298,M,Centre Central Midfielder,Everton,EVE,TRUE
+337934,Kamaldeen Sulemana,244,M,Left Winger,Southampton,SOU,TRUE
+312805,Julio Enciso,242,M,Left/Centre Attacking Midfielder,Brighton and Hove Albion,BHA,TRUE
+336542,Danilo,226,M,Midfielder,Nottingham Forest,NFO,TRUE
+355817,Adam Forshaw,222,M,Centre Central Midfielder,Leeds United,LEE,FALSE
+337950,Sasa Lukic,216,M,Central Midfielder,Fulham,FUL,TRUE
+321940,Carney Chukwuemeka,200,M,Centre Central Midfielder,Chelsea,CHE,TRUE
+336483,Mykhailo Mudryk,184,M,Left Winger,Chelsea,CHE,TRUE
+314125,Pape Sarr,154,M,Centre Central Midfielder,Tottenham Hotspur,TOT,TRUE
+278143,Enock Mwepu,75,M,Left/Centre/Right Attacking Midfielder,Brighton and Hove Albion,BHA,FALSE
+356534,David Brooks,57,M,Left/Centre/Right Attacking Midfielder,Bournemouth,BOU,TRUE
+355287,Yasin Ayari,22,M,Midfielder,Brighton and Hove Albion,BHA,TRUE
+328496,Kobbie Mainoo,8,M,Centre Central Midfielder,Manchester United,MUN,TRUE
+322872,Sam Amo-Ameyaw,6,M,Left Winger,Southampton,SOU,TRUE
+348450,Lewis Miley,6,M,Midfielder,Newcastle United,NEW,TRUE
+347523,Cameron Peupion,4,M,Centre Central Midfielder,Brighton and Hove Albion,BHA,TRUE
+335797,Jack Hinshelwood,3,M,Centre Defensive Midfielder,Brighton and Hove Albion,BHA,TRUE

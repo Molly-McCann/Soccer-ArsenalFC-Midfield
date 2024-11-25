@@ -1,0 +1,429 @@
+---
+title: "Midfield Analysis"
+author: "Molly McCann, Sarah Cernugel, Taylor Hill"
+date: "2024-10-01"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(dplyr)
+library(ggplot2)
+library(ggimage)
+library(rsvg)
+library(tidyverse)
+library(httr)
+library(rvest)
+library(jsonlite)
+library(reshape)
+
+mid_final <- read.csv("~/Downloads/DataAquisition/Project/final_data.csv")
+crest <- read.csv("~/Downloads/DataAquisition/Project/crest.csv")
+```
+
+
+## Hypothesis Testing 
+
+# Manchester City 
+
+H0: arsenal avg midfield pass = manchester city avg midfield pass
+HA: arsenal avg midfield pass > manchester city avg midfield pass
+
+```{r}
+mci_data <- mid_final |>
+  filter(team_abbr %in% c("ARS", "MCI"))
+
+mci_test <- t.test(
+  passes ~ team_abbr, 
+  data = mci_data, 
+  alternative = "greater"  
+)
+
+mci_test
+```
+# Liverpool 
+
+H0: arsenal avg midfield pass = liverpool avg midfield pass
+HA: arsenal avg midfield pass > liverpool avg midfield pass
+
+```{r}
+liv_data <- mid_final |>
+  filter(team_abbr %in% c("ARS", "LIV"))
+
+liv_test <- t.test(
+  formula =  passes ~ team_abbr, 
+  data = liv_data, 
+  alternative = "greater"
+)
+
+liv_test
+```
+
+# Aston Villa 
+
+H0: arsenal avg midfield pass = aston villa avg midfield pass
+HA: arsenal avg midfield pass > aston villa avg midfield pass
+
+```{r}
+avl_data <- mid_final |>
+  filter(team_abbr %in% c("ARS", "AVL"))
+
+avl_test <- t.test(
+  formula =  passes ~ team_abbr, 
+  data = avl_data, 
+  alternative = "greater"
+)
+
+avl_test
+```
+# Tottenham Hotspur 
+
+H0: arsenal avg midfield pass = tottenham avg midfield pass
+HA: arsenal avg midfield pass > tottenham avg midfield pass
+
+```{r}
+tot_data <- mid_final |>
+  filter(team_abbr %in% c("ARS", "TOT"))
+
+tot_test <- t.test(
+  formula =  passes ~ team_abbr, 
+  data = tot_data, 
+  alternative = "greater"
+)
+
+tot_test
+```
+
+# Chelsea 
+
+H0: arsenal avg midfield pass = chelsea avg midfield pass
+HA: arsenal avg midfield pass > chelsea avg midfield pass
+
+```{r}
+che_data <- mid_final |>
+  filter(team_abbr %in% c("ARS", "CHE"))
+
+che_test <- t.test(
+  formula =  passes ~ team_abbr, 
+  data = che_data, 
+  alternative = "greater"
+)
+
+che_test
+```
+
+# Newcastle United 
+
+H0: arsenal avg midfield pass = newccastle avg midfield pass
+HA: arsenal avg midfield pass > newcastle avg midfield pass
+
+```{r}
+new_data <- mid_final |>
+  filter(team_abbr %in% c("ARS", "NEW"))
+
+new_test <- t.test(
+  formula =  passes ~ team_abbr, 
+  data = new_data, 
+  alternative = "greater"
+)
+
+new_test
+```
+
+# Manchester United 
+
+H0: arsenal avg midfield pass = manchester united avg midfield pass
+HA: arsenal avg midfield pass > manchester united avg midfield pass
+
+```{r}
+mun_data <- mid_final |>
+  filter(team_abbr %in% c("ARS", "MUN"))
+
+mun_test <- t.test(
+  formula =  passes ~ team_abbr, 
+  data = mun_data, 
+  alternative = "greater"
+)
+
+mun_test
+```
+
+# West Ham United 
+
+H0: arsenal avg midfield pass = west ham united avg midfield pass
+HA: arsenal avg midfield pass > west ham united avg midfield pass
+
+```{r}
+whu_data <- mid_final |>
+  filter(team_abbr %in% c("ARS", "WHU"))
+
+whu_test <- t.test(
+  formula =  passes ~ team_abbr, 
+  data = whu_data, 
+  alternative = "greater"
+)
+
+whu_test
+```
+
+# Crystal Palace
+
+H0: arsenal avg midfield pass = crystal palace avg midfield pass
+HA: arsenal avg midfield pass > crystal palace avg midfield pass
+
+```{r}
+cry_data <- mid_final |>
+  filter(team_abbr %in% c("ARS", "CRY"))
+
+cry_test <- t.test(
+  formula =  passes ~ team_abbr, 
+  data = cry_data, 
+  alternative = "greater"
+)
+
+cry_test
+```
+
+# Brighton & Hove Albion 
+
+H0: arsenal avg midfield pass = brighton & hove albion avg midfield pass
+HA: arsenal avg midfield pass > brighton & hove albion avg midfield pass
+
+```{r}
+bha_data <- mid_final |>
+  filter(team_abbr %in% c("ARS", "BHA"))
+
+bha_test <- t.test(
+  formula =  passes ~ team_abbr, 
+  data = bha_data, 
+  alternative = "greater"
+)
+
+bha_test
+```
+
+# Fulham
+
+H0: arsenal avg midfield pass = fulham avg midfield pass
+HA: arsenal avg midfield pass > fulham united avg midfield pass
+
+```{r}
+ful_data <- mid_final |>
+  filter(team_abbr %in% c("ARS", "FUL"))
+
+ful_test <- t.test(
+  formula =  passes ~ team_abbr, 
+  data = ful_data, 
+  alternative = "greater"
+)
+
+ful_test
+```
+
+# Bournemouth 
+
+H0: arsenal avg midfield pass = bournemouth avg midfield pass
+HA: arsenal avg midfield pass > bournemouth avg midfield pass
+
+```{r}
+bou_data <- mid_final |>
+  filter(team_abbr %in% c("ARS", "BOU"))
+
+bou_test <- t.test(
+  formula =  passes ~ team_abbr, 
+  data = bou_data, 
+  alternative = "greater"
+)
+
+bou_test
+```
+
+# Wolverhampton Wanderers 
+
+H0: arsenal avg midfield pass = wolverhampton avg midfield pass
+HA: arsenal avg midfield pass > wolverhampton avg midfield pass
+
+```{r}
+wol_data <- mid_final |>
+  filter(team_abbr %in% c("ARS", "WOL"))
+
+wol_test <- t.test(
+  formula =  passes ~ team_abbr, 
+  data = wol_data, 
+  alternative = "greater"
+)
+
+wol_test
+```
+
+# Everton 
+
+H0: arsenal avg midfield pass = everton avg midfield pass
+HA: arsenal avg midfield pass > everton avg midfield pass
+
+```{r}
+eve_data <- mid_final |>
+  filter(team_abbr %in% c("ARS", "EVE"))
+
+eve_test <- t.test(
+  formula =  passes ~ team_abbr, 
+  data = eve_data, 
+  alternative = "greater"
+)
+
+eve_test
+```
+
+# Brentford
+
+H0: arsenal avg midfield pass = brentford avg midfield pass
+HA: arsenal avg midfield pass > brentford avg midfield pass
+
+```{r}
+bre_data <- mid_final |>
+  filter(team_abbr %in% c("ARS", "BRE"))
+
+bre_test <- t.test(
+  formula =  passes ~ team_abbr, 
+  data = bre_data, 
+  alternative = "greater"
+)
+
+bre_test
+```
+
+# Nottingham Forest 
+
+H0: arsenal avg midfield pass = nottingham forest avg midfield pass
+HA: arsenal avg midfield pass > nottingham forest avg midfield pass
+
+```{r}
+nfo_data <- mid_final |>
+  filter(team_abbr %in% c("ARS", "NFO"))
+
+nfo_test <- t.test(
+  formula =  passes ~ team_abbr, 
+  data = nfo_data, 
+  alternative = "greater"
+)
+
+nfo_test
+```
+
+Vizualization
+
+
+
+## Wins
+
+```{r}
+url_1 <- "https://footballapi.pulselive.com/football/stats/ranked/teams/wins?page=0&pageSize=10&compSeasons=578&comps=1&altIds=true"
+win_res1 <- GET(url_1,
+    add_headers(
+      "user-agent" = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+      "origin" = "https://www.premierleague.com",
+      "referer" = "https://www.premierleague.com/"
+    ))
+
+win_cont1 <- content(win_res1, as = "text")
+win_json1 <- fromJSON(win_cont1)
+str(win_json1)
+
+wins1 <- jsonlite::flatten(win_json1$stats$content)
+wins1
+```
+
+```{r}
+url_2 <- "https://footballapi.pulselive.com/football/stats/ranked/teams/wins?page=1&pageSize=10&compSeasons=578&comps=1&altIds=true"
+win_res2 <- GET(url_2,
+    add_headers(
+      "user-agent" = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+      "origin" = "https://www.premierleague.com",
+      "referer" = "https://www.premierleague.com/"
+    ))
+
+win_cont2 <- content(win_res2, as = "text")
+win_json2 <- fromJSON(win_cont2)
+str(win_json2)
+
+wins2 <- jsonlite::flatten(win_json2$stats$content)
+wins2
+```
+
+```{r}
+df_teams <- list(wins1, wins2)
+teams <- merge_recurse(df_teams)
+
+teams <- teams %>% select(owner.name, owner.club.abbr, value)
+
+teams <- dplyr::rename(teams, team = owner.name, team_abbr = owner.club.abbr, wins = value)
+```
+
+## Passes
+
+```{r}
+pass_url_1 <- "https://footballapi.pulselive.com/football/stats/ranked/teams/total_pass?page=0&pageSize=10&compSeasons=578&comps=1&altIds=true"
+passes_res1 <- GET(pass_url_1,
+    add_headers(
+      "user-agent" = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+      "origin" = "https://www.premierleague.com",
+      "referer" = "https://www.premierleague.com/"
+    ))
+
+passes_cont1 <- content(passes_res1, as = "text")
+passes_json1 <- fromJSON(passes_cont1)
+str(passes_json1)
+
+passes1 <- jsonlite::flatten(passes_json1$stats$content)
+passes1
+```
+
+```{r}
+pass_url_2 <- "https://footballapi.pulselive.com/football/stats/ranked/teams/total_pass?page=1&pageSize=10&compSeasons=578&comps=1&altIds=true"
+passes_res2 <- GET(pass_url_2,
+    add_headers(
+      "user-agent" = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+      "origin" = "https://www.premierleague.com",
+      "referer" = "https://www.premierleague.com/"
+    ))
+
+passes_cont2 <- content(passes_res2, as = "text")
+passes_json2 <- fromJSON(passes_cont2)
+str(passes_json2)
+
+passes2 <- jsonlite::flatten(passes_json2$stats$content)
+passes2
+```
+
+```{r}
+df_teams2 <- list(passes1, passes2)
+teams2 <- merge_recurse(df_teams2)
+
+teams2 <- teams2 %>% select(owner.name, value)
+teams2 <- dplyr::rename(teams2, team = owner.name, passes = value)
+
+teams <- merge(teams, teams2, by = "team", all = TRUE)
+```
+
+
+```{r}
+plot_dat <- merge(teams, crest, by.x = "team_abbr", by.y = "Team")
+
+ggplot(plot_dat, aes(x = wins, y = passes)) +
+  geom_point() + 
+  geom_image(aes(image = URL), size = 0.1) +  # Use geom_image to plot crests
+  theme_minimal() +
+  labs(x = "Wins", y = "Passes", title = "Wins vs Pass")
+```
+
+
+
+
+
+
+
+
+

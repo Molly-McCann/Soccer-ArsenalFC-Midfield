@@ -1,0 +1,736 @@
+---
+title: "Midfield Passes"
+author: "Sarah Cernugel, Molly McCann, Taylor Hill"
+date: "2024-09-29"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r}
+library(dplyr)
+library(tidyverse)
+library(httr)
+library(rvest)
+library(jsonlite)
+library(reshape)
+```
+
+
+## Midfield - Passes
+```{r}
+url1 <- "https://footballapi.pulselive.com/football/stats/ranked/players/total_pass?page=0&pageSize=10&compSeasons=578&comps=1&compCodeForActivePlayer=EN_PR&positions=MIDFIELDER&altIds=true"
+pl_res1 <- GET(url1,
+    add_headers(
+      "user-agent" = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+      "origin" = "https://www.premierleague.com",
+      "referer" = "https://www.premierleague.com/"
+    ))
+
+pl_cont1 <- content(pl_res1, as = "text")
+pl_json1 <- fromJSON(pl_cont1)
+str(pl_json1)
+
+mid1 <- jsonlite::flatten(pl_json1$stats$content)
+mid1
+```
+
+```{r}
+url2 <- "https://footballapi.pulselive.com/football/stats/ranked/players/total_pass?page=1&pageSize=10&compSeasons=578&comps=1&compCodeForActivePlayer=EN_PR&positions=MIDFIELDER&altIds=true"
+pl_res2 <- GET(url2,
+    add_headers(
+      "user-agent" = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+      "origin" = "https://www.premierleague.com",
+      "referer" = "https://www.premierleague.com/"
+    ))
+
+pl_cont2 <- content(pl_res2, as = "text")
+pl_json2 <- fromJSON(pl_cont2)
+str(pl_json2)
+
+mid2 <- jsonlite::flatten(pl_json2$stats$content)
+mid2
+```
+
+```{r}
+url3 <- "https://footballapi.pulselive.com/football/stats/ranked/players/total_pass?page=2&pageSize=10&compSeasons=578&comps=1&compCodeForActivePlayer=EN_PR&positions=MIDFIELDER&altIds=true"
+pl_res3 <- GET(url3,
+    add_headers(
+      "user-agent" = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+      "origin" = "https://www.premierleague.com",
+      "referer" = "https://www.premierleague.com/"
+    ))
+
+pl_cont3 <- content(pl_res3, as = "text")
+pl_json3 <- fromJSON(pl_cont3)
+str(pl_json3)
+
+mid3 <- jsonlite::flatten(pl_json3$stats$content)
+mid3
+```
+
+```{r}
+url4 <- "https://footballapi.pulselive.com/football/stats/ranked/players/total_pass?page=3&pageSize=10&compSeasons=578&comps=1&compCodeForActivePlayer=EN_PR&positions=MIDFIELDER&altIds=true"
+pl_res4 <- GET(url4,
+    add_headers(
+      "user-agent" = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+      "origin" = "https://www.premierleague.com",
+      "referer" = "https://www.premierleague.com/"
+    ))
+
+pl_cont4 <- content(pl_res4, as = "text")
+pl_json4 <- fromJSON(pl_cont4)
+str(pl_json4)
+
+mid4 <- jsonlite::flatten(pl_json4$stats$content)
+mid4
+```
+
+```{r}
+url5 <- "https://footballapi.pulselive.com/football/stats/ranked/players/total_pass?page=4&pageSize=10&compSeasons=578&comps=1&compCodeForActivePlayer=EN_PR&positions=MIDFIELDER&altIds=true"
+pl_res5 <- GET(url5,
+    add_headers(
+      "user-agent" = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+      "origin" = "https://www.premierleague.com",
+      "referer" = "https://www.premierleague.com/"
+    ))
+
+pl_cont5 <- content(pl_res5, as = "text")
+pl_json5 <- fromJSON(pl_cont5)
+str(pl_json5)
+
+mid5 <- jsonlite::flatten(pl_json5$stats$content)
+mid5
+```
+
+```{r}
+url6 <- "https://footballapi.pulselive.com/football/stats/ranked/players/total_pass?page=5&pageSize=10&compSeasons=578&comps=1&compCodeForActivePlayer=EN_PR&positions=MIDFIELDER&altIds=true"
+pl_res6 <- GET(url6,
+    add_headers(
+      "user-agent" = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+      "origin" = "https://www.premierleague.com",
+      "referer" = "https://www.premierleague.com/"
+    ))
+
+pl_cont6 <- content(pl_res6, as = "text")
+pl_json6 <- fromJSON(pl_cont6)
+str(pl_json6)
+
+mid6 <- jsonlite::flatten(pl_json6$stats$content)
+mid6
+```
+
+```{r}
+url7 <- "https://footballapi.pulselive.com/football/stats/ranked/players/total_pass?page=6&pageSize=10&compSeasons=578&comps=1&compCodeForActivePlayer=EN_PR&positions=MIDFIELDER&altIds=true"
+pl_res7 <- GET(url7,
+    add_headers(
+      "user-agent" = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+      "origin" = "https://www.premierleague.com",
+      "referer" = "https://www.premierleague.com/"
+    ))
+
+pl_cont7 <- content(pl_res7, as = "text")
+pl_json7 <- fromJSON(pl_cont7)
+str(pl_json7)
+
+mid7 <- jsonlite::flatten(pl_json7$stats$content)
+mid7
+```
+
+```{r}
+url8 <- "https://footballapi.pulselive.com/football/stats/ranked/players/total_pass?page=7&pageSize=10&compSeasons=578&comps=1&compCodeForActivePlayer=EN_PR&positions=MIDFIELDER&altIds=true"
+pl_res8 <- GET(url8,
+    add_headers(
+      "user-agent" = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+      "origin" = "https://www.premierleague.com",
+      "referer" = "https://www.premierleague.com/"
+    ))
+
+pl_cont8 <- content(pl_res8, as = "text")
+pl_json8 <- fromJSON(pl_cont8)
+str(pl_json8)
+
+mid8 <- jsonlite::flatten(pl_json8$stats$content)
+mid8
+```
+
+```{r}
+url9 <- "https://footballapi.pulselive.com/football/stats/ranked/players/total_pass?page=8&pageSize=10&compSeasons=578&comps=1&compCodeForActivePlayer=EN_PR&positions=MIDFIELDER&altIds=true"
+pl_res9 <- GET(url9,
+    add_headers(
+      "user-agent" = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+      "origin" = "https://www.premierleague.com",
+      "referer" = "https://www.premierleague.com/"
+    ))
+
+pl_cont9 <- content(pl_res9, as = "text")
+pl_json9 <- fromJSON(pl_cont9)
+str(pl_json9)
+
+mid9 <- jsonlite::flatten(pl_json9$stats$content)
+mid9
+```
+
+```{r}
+url10 <- "https://footballapi.pulselive.com/football/stats/ranked/players/total_pass?page=9&pageSize=10&compSeasons=578&comps=1&compCodeForActivePlayer=EN_PR&positions=MIDFIELDER&altIds=true"
+pl_res10 <- GET(url10,
+    add_headers(
+      "user-agent" = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+      "origin" = "https://www.premierleague.com",
+      "referer" = "https://www.premierleague.com/"
+    ))
+
+pl_cont10 <- content(pl_res10, as = "text")
+pl_json10 <- fromJSON(pl_cont10)
+str(pl_json10)
+
+mid10 <- jsonlite::flatten(pl_json10$stats$content)
+mid10
+```
+
+```{r}
+url11 <- "https://footballapi.pulselive.com/football/stats/ranked/players/total_pass?page=10&pageSize=10&compSeasons=578&comps=1&compCodeForActivePlayer=EN_PR&positions=MIDFIELDER&altIds=true"
+pl_res11 <- GET(url11,
+    add_headers(
+      "user-agent" = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+      "origin" = "https://www.premierleague.com",
+      "referer" = "https://www.premierleague.com/"
+    ))
+
+pl_cont11 <- content(pl_res11, as = "text")
+pl_json11 <- fromJSON(pl_cont11)
+str(pl_json11)
+
+mid11 <- jsonlite::flatten(pl_json11$stats$content)
+mid11
+```
+
+```{r}
+url12 <- "https://footballapi.pulselive.com/football/stats/ranked/players/total_pass?page=11&pageSize=10&compSeasons=578&comps=1&compCodeForActivePlayer=EN_PR&positions=MIDFIELDER&altIds=true"
+pl_res12 <- GET(url12,
+    add_headers(
+      "user-agent" = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+      "origin" = "https://www.premierleague.com",
+      "referer" = "https://www.premierleague.com/"
+    ))
+
+pl_cont12 <- content(pl_res12, as = "text")
+pl_json12 <- fromJSON(pl_cont12)
+str(pl_json12)
+
+mid12 <- jsonlite::flatten(pl_json12$stats$content)
+mid12
+```
+
+```{r}
+url13 <- "https://footballapi.pulselive.com/football/stats/ranked/players/total_pass?page=12&pageSize=10&compSeasons=578&comps=1&compCodeForActivePlayer=EN_PR&positions=MIDFIELDER&altIds=true"
+pl_res13 <- GET(url13,
+    add_headers(
+      "user-agent" = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+      "origin" = "https://www.premierleague.com",
+      "referer" = "https://www.premierleague.com/"
+    ))
+
+pl_cont13 <- content(pl_res13, as = "text")
+pl_json13 <- fromJSON(pl_cont13)
+str(pl_json13)
+
+mid13 <- jsonlite::flatten(pl_json13$stats$content)
+mid13
+```
+
+```{r}
+url14 <- "https://footballapi.pulselive.com/football/stats/ranked/players/total_pass?page=13&pageSize=10&compSeasons=578&comps=1&compCodeForActivePlayer=EN_PR&positions=MIDFIELDER&altIds=true"
+pl_res14 <- GET(url14,
+    add_headers(
+      "user-agent" = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+      "origin" = "https://www.premierleague.com",
+      "referer" = "https://www.premierleague.com/"
+    ))
+
+pl_cont14 <- content(pl_res14, as = "text")
+pl_json14 <- fromJSON(pl_cont14)
+str(pl_json14)
+
+mid14 <- jsonlite::flatten(pl_json14$stats$content)
+mid14
+```
+
+```{r}
+url15 <- "https://footballapi.pulselive.com/football/stats/ranked/players/total_pass?page=14&pageSize=10&compSeasons=578&comps=1&compCodeForActivePlayer=EN_PR&positions=MIDFIELDER&altIds=true"
+pl_res15 <- GET(url15,
+    add_headers(
+      "user-agent" = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+      "origin" = "https://www.premierleague.com",
+      "referer" = "https://www.premierleague.com/"
+    ))
+
+pl_cont15 <- content(pl_res15, as = "text")
+pl_json15 <- fromJSON(pl_cont15)
+str(pl_json15)
+
+mid15 <- jsonlite::flatten(pl_json15$stats$content)
+mid15
+```
+
+```{r}
+url16 <- "https://footballapi.pulselive.com/football/stats/ranked/players/total_pass?page=15&pageSize=10&compSeasons=578&comps=1&compCodeForActivePlayer=EN_PR&positions=MIDFIELDER&altIds=true"
+pl_res16 <- GET(url16,
+    add_headers(
+      "user-agent" = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+      "origin" = "https://www.premierleague.com",
+      "referer" = "https://www.premierleague.com/"
+    ))
+
+pl_cont16 <- content(pl_res16, as = "text")
+pl_json16 <- fromJSON(pl_cont16)
+str(pl_json16)
+
+mid16 <- jsonlite::flatten(pl_json16$stats$content)
+mid16
+```
+
+```{r}
+url17 <- "https://footballapi.pulselive.com/football/stats/ranked/players/total_pass?page=16&pageSize=10&compSeasons=578&comps=1&compCodeForActivePlayer=EN_PR&positions=MIDFIELDER&altIds=true"
+pl_res17 <- GET(url17,
+    add_headers(
+      "user-agent" = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+      "origin" = "https://www.premierleague.com",
+      "referer" = "https://www.premierleague.com/"
+    ))
+
+pl_cont17 <- content(pl_res17, as = "text")
+pl_json17 <- fromJSON(pl_cont17)
+str(pl_json17)
+
+mid17 <- jsonlite::flatten(pl_json17$stats$content)
+mid17
+```
+
+```{r}
+url18 <- "https://footballapi.pulselive.com/football/stats/ranked/players/total_pass?page=17&pageSize=10&compSeasons=578&comps=1&compCodeForActivePlayer=EN_PR&positions=MIDFIELDER&altIds=true"
+pl_res18 <- GET(url18,
+    add_headers(
+      "user-agent" = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+      "origin" = "https://www.premierleague.com",
+      "referer" = "https://www.premierleague.com/"
+    ))
+
+pl_cont18 <- content(pl_res18, as = "text")
+pl_json18 <- fromJSON(pl_cont18)
+str(pl_json18)
+
+mid18 <- jsonlite::flatten(pl_json18$stats$content)
+mid18
+```
+
+```{r}
+url19 <- "https://footballapi.pulselive.com/football/stats/ranked/players/total_pass?page=18&pageSize=10&compSeasons=578&comps=1&compCodeForActivePlayer=EN_PR&positions=MIDFIELDER&altIds=true"
+pl_res19 <- GET(url19,
+    add_headers(
+      "user-agent" = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+      "origin" = "https://www.premierleague.com",
+      "referer" = "https://www.premierleague.com/"
+    ))
+
+pl_cont19 <- content(pl_res19, as = "text")
+pl_json19 <- fromJSON(pl_cont19)
+str(pl_json19)
+
+mid19 <- jsonlite::flatten(pl_json19$stats$content)
+mid19
+```
+
+
+```{r}
+df_mid <- list(mid1, mid2, mid3, mid4, mid5, mid6, mid7, mid8, mid9, mid10, mid11, mid12, mid13, mid14, mid15, mid16, mid17, mid18, mid19)
+midfield <- merge_recurse(df_mid)
+
+midfield <- midfield %>% select(owner.playerId, owner.name.display, value, owner.info.position, owner.info.positionInfo, owner.currentTeam.club.name, owner.currentTeam.club.abbr, owner.active)
+
+midfield <- dplyr::rename(midfield, player_id = owner.playerId, player = owner.name.display, passes = value, position = owner.info.position, position_specific = owner.info.positionInfo, team = owner.currentTeam.club.name, team_abbr = owner.currentTeam.club.abbr, active = owner.active)
+```
+
+
+```{r}
+url23.0 <- "https://footballapi.pulselive.com/football/stats/ranked/players/total_pass?page=0&pageSize=10&compSeasons=489&comps=1&compCodeForActivePlayer=EN_PR&positions=MIDFIELDER&altIds=true"
+
+res_url23.0 <- GET(url23.0,
+    add_headers(
+      "user-agent" = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+      "origin" = "https://www.premierleague.com",
+      "referer" = "https://www.premierleague.com/"
+    ))
+
+cont_url23.0 <- content(res_url23.0, as = "text")
+json_url23.0 <- fromJSON(cont_url23.0)
+
+mid23.0 <- jsonlite::flatten(json_url23.0$stats$content)
+mid23.0
+```
+
+```{r}
+url23.1 <- "https://footballapi.pulselive.com/football/stats/ranked/players/total_pass?page=1&pageSize=10&compSeasons=489&comps=1&compCodeForActivePlayer=EN_PR&positions=MIDFIELDER&altIds=true"
+
+res_url23.1 <- GET(url23.1,
+    add_headers(
+      "user-agent" = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+      "origin" = "https://www.premierleague.com",
+      "referer" = "https://www.premierleague.com/"
+    ))
+
+cont_url23.1 <- content(res_url23.1, as = "text")
+json_url23.1 <- fromJSON(cont_url23.1)
+
+mid23.1 <- jsonlite::flatten(json_url23.1$stats$content)
+mid23.1
+```
+
+```{r}
+url23.2 <- "https://footballapi.pulselive.com/football/stats/ranked/players/total_pass?page=2&pageSize=10&compSeasons=489&comps=1&compCodeForActivePlayer=EN_PR&positions=MIDFIELDER&altIds=true"
+
+res_url23.2 <- GET(url23.2,
+    add_headers(
+      "user-agent" = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+      "origin" = "https://www.premierleague.com",
+      "referer" = "https://www.premierleague.com/"
+    ))
+
+cont_url23.2 <- content(res_url23.2, as = "text")
+json_url23.2 <- fromJSON(cont_url23.2)
+
+mid23.2 <- jsonlite::flatten(json_url23.2$stats$content)
+mid23.2
+```
+
+```{r}
+url23.3 <- "https://footballapi.pulselive.com/football/stats/ranked/players/total_pass?page=3&pageSize=10&compSeasons=489&comps=1&compCodeForActivePlayer=EN_PR&positions=MIDFIELDER&altIds=true"
+
+res_url23.3 <- GET(url23.3,
+    add_headers(
+      "user-agent" = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+      "origin" = "https://www.premierleague.com",
+      "referer" = "https://www.premierleague.com/"
+    ))
+
+cont_url23.3 <- content(res_url23.3, as = "text")
+json_url23.3 <- fromJSON(cont_url23.3)
+
+mid23.3 <- jsonlite::flatten(json_url23.3$stats$content)
+mid23.3
+```
+
+```{r}
+url23.4 <- "https://footballapi.pulselive.com/football/stats/ranked/players/total_pass?page=4&pageSize=10&compSeasons=489&comps=1&compCodeForActivePlayer=EN_PR&positions=MIDFIELDER&altIds=true"
+
+res_url23.4 <- GET(url23.4,
+    add_headers(
+      "user-agent" = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+      "origin" = "https://www.premierleague.com",
+      "referer" = "https://www.premierleague.com/"
+    ))
+
+cont_url23.4 <- content(res_url23.4, as = "text")
+json_url23.4 <- fromJSON(cont_url23.4)
+
+mid23.4 <- jsonlite::flatten(json_url23.4$stats$content)
+mid23.4
+```
+
+```{r}
+url23.5 <- "https://footballapi.pulselive.com/football/stats/ranked/players/total_pass?page=5&pageSize=10&compSeasons=489&comps=1&compCodeForActivePlayer=EN_PR&positions=MIDFIELDER&altIds=true"
+
+res_url23.5 <- GET(url23.5,
+    add_headers(
+      "user-agent" = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+      "origin" = "https://www.premierleague.com",
+      "referer" = "https://www.premierleague.com/"
+    ))
+
+cont_url23.5 <- content(res_url23.5, as = "text")
+json_url23.5 <- fromJSON(cont_url23.5)
+
+mid23.5 <- jsonlite::flatten(json_url23.5$stats$content)
+mid23.5
+```
+
+```{r}
+url23.6 <- "https://footballapi.pulselive.com/football/stats/ranked/players/total_pass?page=6&pageSize=10&compSeasons=489&comps=1&compCodeForActivePlayer=EN_PR&positions=MIDFIELDER&altIds=true"
+
+res_url23.6 <- GET(url23.6,
+    add_headers(
+      "user-agent" = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+      "origin" = "https://www.premierleague.com",
+      "referer" = "https://www.premierleague.com/"
+    ))
+
+cont_url23.6 <- content(res_url23.6, as = "text")
+json_url23.6 <- fromJSON(cont_url23.6)
+
+mid23.6 <- jsonlite::flatten(json_url23.6$stats$content)
+mid23.6
+```
+
+```{r}
+url23.7 <- "https://footballapi.pulselive.com/football/stats/ranked/players/total_pass?page=7&pageSize=10&compSeasons=489&comps=1&compCodeForActivePlayer=EN_PR&positions=MIDFIELDER&altIds=true"
+
+res_url23.7 <- GET(url23.7,
+    add_headers(
+      "user-agent" = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+      "origin" = "https://www.premierleague.com",
+      "referer" = "https://www.premierleague.com/"
+    ))
+
+cont_url23.7 <- content(res_url23.7, as = "text")
+json_url23.7 <- fromJSON(cont_url23.7)
+
+mid23.7 <- jsonlite::flatten(json_url23.7$stats$content)
+mid23.7
+```
+
+```{r}
+url23.8 <- "https://footballapi.pulselive.com/football/stats/ranked/players/total_pass?page=8&pageSize=10&compSeasons=489&comps=1&compCodeForActivePlayer=EN_PR&positions=MIDFIELDER&altIds=true"
+
+res_url23.8 <- GET(url23.8,
+    add_headers(
+      "user-agent" = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+      "origin" = "https://www.premierleague.com",
+      "referer" = "https://www.premierleague.com/"
+    ))
+
+cont_url23.8 <- content(res_url23.8, as = "text")
+json_url23.8 <- fromJSON(cont_url23.8)
+
+mid23.8 <- jsonlite::flatten(json_url23.8$stats$content)
+mid23.8
+```
+
+```{r}
+url23.9 <- "https://footballapi.pulselive.com/football/stats/ranked/players/total_pass?page=9&pageSize=10&compSeasons=489&comps=1&compCodeForActivePlayer=EN_PR&positions=MIDFIELDER&altIds=true"
+
+res_url23.9 <- GET(url23.9,
+    add_headers(
+      "user-agent" = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+      "origin" = "https://www.premierleague.com",
+      "referer" = "https://www.premierleague.com/"
+    ))
+
+cont_url23.9 <- content(res_url23.9, as = "text")
+json_url23.9 <- fromJSON(cont_url23.9)
+
+mid23.9 <- jsonlite::flatten(json_url23.9$stats$content)
+mid23.9
+```
+
+```{r}
+url23.10 <- "https://footballapi.pulselive.com/football/stats/ranked/players/total_pass?page=10&pageSize=10&compSeasons=489&comps=1&compCodeForActivePlayer=EN_PR&positions=MIDFIELDER&altIds=true"
+
+res_url23.10 <- GET(url23.10,
+    add_headers(
+      "user-agent" = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+      "origin" = "https://www.premierleague.com",
+      "referer" = "https://www.premierleague.com/"
+    ))
+
+cont_url23.10 <- content(res_url23.10, as = "text")
+json_url23.10 <- fromJSON(cont_url23.10)
+
+mid23.10 <- jsonlite::flatten(json_url23.10$stats$content)
+mid23.10
+```
+
+```{r}
+url23.11 <- "https://footballapi.pulselive.com/football/stats/ranked/players/total_pass?page=11&pageSize=10&compSeasons=489&comps=1&compCodeForActivePlayer=EN_PR&positions=MIDFIELDER&altIds=true"
+
+res_url23.11 <- GET(url23.11,
+    add_headers(
+      "user-agent" = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+      "origin" = "https://www.premierleague.com",
+      "referer" = "https://www.premierleague.com/"
+    ))
+
+cont_url23.11 <- content(res_url23.11, as = "text")
+json_url23.11 <- fromJSON(cont_url23.11)
+
+mid23.11 <- jsonlite::flatten(json_url23.11$stats$content)
+mid23.11
+```
+
+```{r}
+url23.12 <- "https://footballapi.pulselive.com/football/stats/ranked/players/total_pass?page=12&pageSize=10&compSeasons=489&comps=1&compCodeForActivePlayer=EN_PR&positions=MIDFIELDER&altIds=true"
+
+res_url23.12 <- GET(url23.12,
+    add_headers(
+      "user-agent" = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+      "origin" = "https://www.premierleague.com",
+      "referer" = "https://www.premierleague.com/"
+    ))
+
+cont_url23.12 <- content(res_url23.12, as = "text")
+json_url23.12 <- fromJSON(cont_url23.12)
+
+mid23.12 <- jsonlite::flatten(json_url23.12$stats$content)
+mid23.12
+```
+
+```{r}
+url23.13 <- "https://footballapi.pulselive.com/football/stats/ranked/players/total_pass?page=13&pageSize=10&compSeasons=489&comps=1&compCodeForActivePlayer=EN_PR&positions=MIDFIELDER&altIds=true"
+
+res_url23.13 <- GET(url23.13,
+    add_headers(
+      "user-agent" = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+      "origin" = "https://www.premierleague.com",
+      "referer" = "https://www.premierleague.com/"
+    ))
+
+cont_url23.13 <- content(res_url23.13, as = "text")
+json_url23.13 <- fromJSON(cont_url23.13)
+
+mid23.13 <- jsonlite::flatten(json_url23.13$stats$content)
+mid23.13
+```
+
+```{r}
+url23.14 <- "https://footballapi.pulselive.com/football/stats/ranked/players/total_pass?page=14&pageSize=10&compSeasons=489&comps=1&compCodeForActivePlayer=EN_PR&positions=MIDFIELDER&altIds=true"
+
+res_url23.14 <- GET(url23.14,
+    add_headers(
+      "user-agent" = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+      "origin" = "https://www.premierleague.com",
+      "referer" = "https://www.premierleague.com/"
+    ))
+
+cont_url23.14 <- content(res_url23.14, as = "text")
+json_url23.14 <- fromJSON(cont_url23.14)
+
+mid23.14 <- jsonlite::flatten(json_url23.14$stats$content)
+mid23.14
+```
+
+```{r}
+url23.15 <- "https://footballapi.pulselive.com/football/stats/ranked/players/total_pass?page=15&pageSize=10&compSeasons=489&comps=1&compCodeForActivePlayer=EN_PR&positions=MIDFIELDER&altIds=true"
+
+res_url23.15 <- GET(url23.15,
+    add_headers(
+      "user-agent" = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+      "origin" = "https://www.premierleague.com",
+      "referer" = "https://www.premierleague.com/"
+    ))
+
+cont_url23.15 <- content(res_url23.15, as = "text")
+json_url23.15 <- fromJSON(cont_url23.15)
+
+mid23.15 <- jsonlite::flatten(json_url23.15$stats$content)
+mid23.15
+```
+
+```{r}
+url23.16 <- "https://footballapi.pulselive.com/football/stats/ranked/players/total_pass?page=16&pageSize=10&compSeasons=489&comps=1&compCodeForActivePlayer=EN_PR&positions=MIDFIELDER&altIds=true"
+
+res_url23.16 <- GET(url23.16,
+    add_headers(
+      "user-agent" = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+      "origin" = "https://www.premierleague.com",
+      "referer" = "https://www.premierleague.com/"
+    ))
+
+cont_url23.16 <- content(res_url23.16, as = "text")
+json_url23.16 <- fromJSON(cont_url23.16)
+
+mid23.16 <- jsonlite::flatten(json_url23.16$stats$content)
+mid23.16
+```
+
+```{r}
+url23.17 <- "https://footballapi.pulselive.com/football/stats/ranked/players/total_pass?page=17&pageSize=10&compSeasons=489&comps=1&compCodeForActivePlayer=EN_PR&positions=MIDFIELDER&altIds=true"
+
+res_url23.17 <- GET(url23.17,
+    add_headers(
+      "user-agent" = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+      "origin" = "https://www.premierleague.com",
+      "referer" = "https://www.premierleague.com/"
+    ))
+
+cont_url23.17 <- content(res_url23.17, as = "text")
+json_url23.17 <- fromJSON(cont_url23.17)
+
+mid23.17 <- jsonlite::flatten(json_url23.17$stats$content)
+mid23.17
+```
+
+```{r}
+url23.18 <- "https://footballapi.pulselive.com/football/stats/ranked/players/total_pass?page=18&pageSize=10&compSeasons=489&comps=1&compCodeForActivePlayer=EN_PR&positions=MIDFIELDER&altIds=true"
+
+res_url23.18 <- GET(url23.18,
+    add_headers(
+      "user-agent" = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+      "origin" = "https://www.premierleague.com",
+      "referer" = "https://www.premierleague.com/"
+    ))
+
+cont_url23.18 <- content(res_url23.18, as = "text")
+json_url23.18 <- fromJSON(cont_url23.18)
+
+mid23.18 <- jsonlite::flatten(json_url23.18$stats$content)
+mid23.18
+```
+
+```{r}
+url23.19 <- "https://footballapi.pulselive.com/football/stats/ranked/players/total_pass?page=19&pageSize=10&compSeasons=489&comps=1&compCodeForActivePlayer=EN_PR&positions=MIDFIELDER&altIds=true"
+
+res_url23.19 <- GET(url23.19,
+    add_headers(
+      "user-agent" = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+      "origin" = "https://www.premierleague.com",
+      "referer" = "https://www.premierleague.com/"
+    ))
+
+cont_url23.19 <- content(res_url23.19, as = "text")
+json_url23.19 <- fromJSON(cont_url23.19)
+
+mid23.19 <- jsonlite::flatten(json_url23.19$stats$content)
+mid23.19
+```
+
+```{r}
+url23.20 <- "https://footballapi.pulselive.com/football/stats/ranked/players/total_pass?page=20&pageSize=10&compSeasons=489&comps=1&compCodeForActivePlayer=EN_PR&positions=MIDFIELDER&altIds=true"
+
+res_url23.20 <- GET(url23.20,
+    add_headers(
+      "user-agent" = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+      "origin" = "https://www.premierleague.com",
+      "referer" = "https://www.premierleague.com/"
+    ))
+
+cont_url23.20 <- content(res_url23.20, as = "text")
+json_url23.20 <- fromJSON(cont_url23.20)
+
+mid23.20 <- jsonlite::flatten(json_url23.20$stats$content)
+mid23.20
+```
+
+```{r}
+df_mid23 <- list(mid23.0, mid23.1, mid23.2, mid23.3, mid23.4, mid23.5, mid23.6, mid23.7, mid23.8, mid23.9, mid23.10, mid23.11, mid23.12, mid23.13, mid23.14, mid23.15, mid23.16, mid23.17, mid23.18, mid23.19, mid23.20)
+midfield23 <- merge_recurse(df_mid23)
+
+midfield23 <- midfield23 %>% select(owner.playerId, owner.name.display, value, owner.info.position, owner.info.positionInfo, owner.currentTeam.club.name, owner.currentTeam.club.abbr, owner.active)
+
+midfield23 <- dplyr::rename(midfield23, player_id = owner.playerId, player = owner.name.display, passes = value, position = owner.info.position, position_specific = owner.info.positionInfo, team = owner.currentTeam.club.name, team_abbr = owner.currentTeam.club.abbr, active = owner.active)
+```
+
+```{r}
+mid_final <- list(midfield, midfield23)
+mid_final <- merge_recurse(mid_final)
+
+mid_final <- mid_final |> 
+  filter(!is.na(team_abbr))
+
+write_csv(mid_final, file = "final_data.csv")
+```
+
+
+
+
